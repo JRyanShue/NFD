@@ -1,0 +1,20 @@
+name: 3d_mlp
+channels:
+  - defaults
+dependencies:
+  - cudatoolkit
+  - python=3.9
+  - pytorch
+  - torchvision
+  - cython
+  - pykdtree
+  - tqdm
+  - ipykernel
+  - matplotlib
+  - pip:
+    - torchaudio
+    - mrcfile
+    - trimesh
+    - scipy
+    - PyMCubes
+prefix: /home/ericchan/miniconda3/envs/3d_mlp

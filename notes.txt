@@ -1,0 +1,26 @@
+Notes for development
+
+2/5/23
+
+To run the OpenAI script from python, basically need to create a Namespace object in place of the args passed through argpase. 
+Going to run the script normally and print out the args object, and replicate it in a Namespace.
+Pushing everything to an NFD preview
+
+I think sys.path is off?
+Because when the module guided_diffusion is set up, sys.path automatically looks for it. 
+Problem is in the "pip install -e ."
+Ok, ran "pip uninstall guided-diffusion"
+Also, have to change "guided_diffusion" imports to "neural_field_diffusion.guided_diffusion"
+
+Now getting this error: "RuntimeError: Unable to find a valid cuDNN algorithm to run convolution"
+So when I want to switch between neural-field-diffusion and nfd, I have to redo the "pip install -e ."
+Not a big deal, just have to remember. 
+Still getting the error. I think I've gotten it before.
+
+2/6/23
+
+So it's working now...weird.
+On to splitting and decoding, then we're done!
+Might want to also clean out the neural-field-diffusion codebase.
+
+Ok, it works!
